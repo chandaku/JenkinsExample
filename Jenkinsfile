@@ -20,7 +20,7 @@
         stage ('Deployment Stage') {
         steps {
              withMaven(maven : 'MAVEN_3.5.2') {
-                 bat 'mvn deploy'
+                 bat 'mvn install'
                  }
              }
         }
